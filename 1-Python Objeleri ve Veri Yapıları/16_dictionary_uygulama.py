@@ -49,5 +49,3 @@ ogrenciler.update({
     }
 })
 print(ogrenciler)
-
-
