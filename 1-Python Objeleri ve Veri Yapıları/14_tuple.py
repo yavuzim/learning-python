@@ -60,18 +60,3 @@ print(meyveler)
 
 # tupleyi komple sil.
 del meyveler
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
