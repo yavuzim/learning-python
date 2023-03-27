@@ -1,32 +1,54 @@
-meyveler = {"Portakal","Elma","Muz"}
-print(meyveler)
-# print(meyveler[1]) indekslenemez!
+# set oluşturma.
 
-# Elemanlarına döngü ile ulaşırız
-for x  in meyveler :
-    print(x)
+isimler = {"kemal","yeşim","mehmetcan","elif"}
 
-# Eklenen elemanlar rastgele yerlere eklenir.
-meyveler.add("Çilek") # Yeni eleman ekler.
-print(meyveler)
+# ekrana yaz.
+print(isimler)
 
-meyveler.update(["Ananas","Üzüm"]) # Yeni eleman ekler.
-print(meyveler)
+# set uzunluğu.
+print(len(isimler))
 
-meyveler.add("Elma") # Eklenen eleman varsa ekleme yapmaz.
-print(meyveler)
- 
-meyveler.update(["Ananas","Üzüm"]) # Eklenen eleman varsa ekleme yapmaz.
-print(meyveler)
+# bir set farklı veri türleri içerebilir.
 
-meyveler.remove("Elma") # Elmayı siler
-print(meyveler)
+set1 = {"abc", 34.5, True, 40, "deger"}
 
-meyveler.pop() # Herhangi bir elemanı siler.
-print(meyveler)
+# ögelere erişim. Döngü ile erişebiliriz.
+for i in isimler:
+    print(i)
+    
+# veri kontrolü.
+print("kemal" in isimler) # kemal değeri varsa True yoksa False yazar.
 
-dizi = [1,2,1,9,6,5,6,1]
-print(dizi)
-print(set(dizi)) # Tekrarlanan elemanaları liste içerisinden gider. {1, 2, 5, 6, 9}
+# veri ekle.
+isimler.add("yavuz")
+print(isimler)
 
+# isimler setine başka setten eleman ekleme.
+dersler = {"Sayısal Analiz","Algoritma"}
+isimler.update(dersler)
+print(isimler)
+
+# isimler setine liste elemanlarını ekleme.
+liste = [8,9,14]
+isimler.update(liste)
+print(isimler)
+
+# setten veri sil 1. (kaldırılacak veri yoksa hata verir.)
+isimler.remove("Algoritma")
+print(isimler)
+
+# setten veri sil 2. (kaldırılacak veri yoksa hata vermez.)
+isimler.discard("Sayısal Analiz")
+print(isimler)
+
+# rastgele bir öge kaldırma.
+isimler.pop()
+print(isimler)
+
+# seti boşalt.
+isimler.clear()
+print(isimler)
+
+# seti tamamen sil.
+del isimler
 
