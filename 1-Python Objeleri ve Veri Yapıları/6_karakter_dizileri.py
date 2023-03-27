@@ -1,13 +1,14 @@
 isim = "Yavuz"
 yas = 24
-yazdir = 'İsim : '+isim+' '+'Yaş : '+str(yas)
-print(yazdir)       # İsim : Yavuz Yaş : 24
-print(yazdir[0])    # İ 
-print(yazdir[1])    # S
-print(len(yazdir))  # 21 - len metodu string metnin uzunluğunu alır.
-uzunluk = len(yazdir)
-print(yazdir[uzunluk - 1]) # 4
-print(yazdir[-1])       # en son karakteri verir. 4
-print(yazdir[2:8])  # 2.indeksten başla ve baştan 8'e kadar al. im : Y
-print(yazdir[3:])   # 3.indexten başla sonuna kadar git. m : Yavuz Yaş : 24
-print(yazdir[2:21:2]) # 2.indeksten başla (2 dahil değil) 21 karakter kadar 2 karakterde bir al.
+ekranaYaz = "İsim : "+isim+" - Yaş : "+str(yas)
+print(ekranaYaz) # İsim : Yavuz - Yaş : 24
+print(ekranaYaz[0])    # İ
+print(ekranaYaz[1])    # S
+print(len(ekranaYaz))  # 23 - len metodu string metnin uzunluğunu alır. Boşluklarıda karakter olarak sayar.
+uzunluk = len(ekranaYaz)
+print(ekranaYaz[uzunluk - 1]) # 4
+print(ekranaYaz[-1])       # en son karakteri verir. 4
+print(ekranaYaz[2:9])      # 2.indeksten başla ve baştan 9 karakter al. im : Ya
+print(ekranaYaz[3:])       # 3.indexten başla sonuna kadar al. m : Yavuz - Yaş : 24
+print(ekranaYaz[:16])      # Baştan başla 16 karakter al.
+print(ekranaYaz[2:23:2]) # 2.indeksten başla 23 karakter kadar git ve 2 karakterde bir al.
