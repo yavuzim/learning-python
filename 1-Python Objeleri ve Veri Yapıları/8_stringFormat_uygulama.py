@@ -38,13 +38,3 @@ print(yeniDeger)
 
 veri = "abc"
 print(veri*3)
-
-
-
-
-
-
-
-
-
-

@@ -18,4 +18,3 @@ print("Sonuc : {}".format(sonuc))
 # Sonuc : 0.2857142857142857
 print("Sonuc : {s:1.4}".format(s = sonuc)) # Baştan 1 basamak boşluk ve virgülden sonra 4 basamak al.
 # Sonuc : 0.2857
-

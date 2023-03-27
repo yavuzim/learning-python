@@ -30,5 +30,3 @@ kareAlan = int(a)**2 # veya kareAlan = int(a)*int(a)
 kareCevre = int(a)*4
 print("Alan : ",kareAlan)
 print("Çevre : ",kareCevre)
-
-
