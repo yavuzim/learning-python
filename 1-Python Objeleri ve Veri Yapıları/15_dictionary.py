@@ -48,17 +48,3 @@ print(kimlik)
 
 # dictionaryi sil
 del kimlik
-
-
-
-
-
-
-
-
-
-
-
-
-
-
