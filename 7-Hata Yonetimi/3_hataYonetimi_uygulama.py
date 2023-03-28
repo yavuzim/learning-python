@@ -1,61 +1,92 @@
-# 1- Liste elemanlar içindeki sayısal değerleri bulunuz.
-liste = ["1","2","5a","10b","abc"]
-try:
-    for i in liste:
-        print(int(i))
-except ValueError as e:
-    print(e)
+# 1- Liste elemanlar içindeki sayısal ve string değerleri ayırınız.
 
-# 2- Kullanıcı 'q' değerini girmedikçe alınan her inputun sayı olduğundan 
-# emin olunuz aksi hata mesajı yazın.
+liste = ["1","2","5a","10b","abc","4"]
+
+sayiListe = []
+stringListe = []
+sayac = 0
+while sayac<len(liste):
+    try:
+        sayiListe.append(int(liste[sayac]))
+    except ValueError:
+        stringListe.append(liste[sayac])
+    finally:
+        sayac+=1
+        
+print(sayiListe)
+print(stringListe)
+
+# 2- Kullanıcı 'q' değerini girmedikçe alınan her inputun sayı olduğundan emin olunuz aksi hata mesajı yazın.
 
 deger = ""
-sayilar = []
-while True:
+while deger!="q":
+    deger = input("Değer : ")
     try:
-        deger = input("Değer : ")
-        if deger == "q" :
-            break
         deger = int(deger)
-        sayilar.append(deger)
     except ValueError:
-        print("Hatalı Değer")
-print(sayilar)
-print("Bitti")
+        if deger!="q":
+            print("Girdiğiniz Değer Hatalı")
+    else:        
+        print("Girilen Değer : ",deger)
 
 # 3- Girilen parola içinde türkçe karakter hatası veriniz.
-def sifreKontrol(sifre):
+
+def sifre_kontrol(sifre):
     import re
-    if  re.search("[ı,İ,ü,Ü,Ç,ç,Ş,ş,ğ,Ğ,ö,Ö]",sifre):
-        raise Exception("Şifre Türkçe Karakter İçermemelidir.")
-parola = input("Şifre : ")
+    if re.search("[ı,İ,ü,Ü,Ç,ç,Ş,ş,ğ,Ğ,ö,Ö]",sifre):
+        raise Exception("Şifre Türkçe Katakter İçermemelidir!")
+    return sifre
+
+sifre = input("Şifre : ")
 try:
-    sifreKontrol(parola)
+    yeniSifre = sifre_kontrol(sifre)
 except Exception as ex:
     print(ex)
-else: print("Şifreniz Oluşturuldu.")
-
-# 4- Faktoriyel fonksiyonu oluşturup fonksiyona gelen değer için hata mesajı
-# verin.
+else:
+    print("Şifre Oluşturuldu")
+    print("Şifre : ",yeniSifre)
+    
+# 4- Faktoriyel fonksiyonu oluşturup fonksiyona gelen değer için hata mesajı verin.
 
 def faktoriyel(sayi):
     import re
     carpim = 1
     if sayi<0:
-        raise Exception("Değer negatif olamaz!")
-    elif sayi==0:
-        carpim = 1
+        raise Exception("sayi>-1 olmalıdır!")
     else:
         for i in range(1,sayi+1):
-            carpim*=i
-
+            carpim = carpim*i
     return carpim
-sonuca = 1
+
+sayi = int(input("Sayı : "))
 try:
-    sayi = int(input("Sayı : "))
     sonuc = faktoriyel(sayi)
-except Exception as err:
-    print(err)
-except ValueError as err:
-    print(err)
-else: print(f"{sayi}! = {sonuc}")
+except Exception as ex:
+    print(ex)
+else:
+    print(str(sayi)+"! = "+str(sonuc))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
