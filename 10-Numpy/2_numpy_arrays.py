@@ -1,35 +1,77 @@
 import numpy as np
 
-sonuc = np.arange(1,10)                     # [1 2 3 4 5 6 7 8 9]
+# İçinde 1-10 arasında sayılar olan dizi. 10 dahil değil.
+np_liste = np.arange(1,10)
 
-sonuc = np.arange(10,100,3)                 # [10 13 16 19 ... 97]
+# İçinde 1-100 arasında 2'şer 2'şer artan sayı dizisi.
+np_liste = np.arange(1,10,2)
 
-sonuc = np.zeros(10)                        # [0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+# İçinde 10 tane 0 olan dizi. Her bir değer float veri tipindedir.
+np_liste = np.zeros(10)
 
-sonuc = np.ones(10)                         # [1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
+# İçinde 10 tane 1 olan dizi. Her bir değer float veri tipindedir.
+np_liste = np.ones(10)
 
-sonuc = np.linspace(0,100,5)                # [  0.  25.  50.  75. 100.]
+# 0-100 arasındaki sayıları eşit aralıklarla 5 parçaya böl. Her bir değer float veri tipindedir
+np_liste = np.linspace(0,100,5)
 
-sonuc = np.linspace(0,5,5)                  # [0.   1.25 2.5  3.75 5.  ]
+# 10-100 arasında rastgele 1 adet sayı üret. 100 dahil değil.
+np_liste = np.random.randint(10,100)
 
-sonuc = np.random.randint(0,10)             # Rastgele sayı üretir. 0 <= sonuc < 10
+# 10-100 arasında rastgele 3 adet sayı üret. 100 dahil değil.
+np_liste = np.random.randint(10,100,3)
+enBuyukSayi = np_liste.max() # üretilen en büyük sayıyı getirir.
+enBuyukSayiIndex = np_liste.argmax() # üretilen en büyük sayıyının indexsini getirir.
+enKucukSayi = np_liste.min() # üretilen en küçük sayıyı getirir.
+enBuyukSayiIndex = np_liste.argmin() # üretilen en küçük sayıyının indexsini getirir.
+ortalama = np_liste.mean()  # üretilen sayıların ortlamasını alır.
+print("Üretilen En Büyük Sayı : ",enBuyukSayi)
+print("Üretilen En Küçük Sayı : ",enKucukSayi)
+print("Üretilen Sayıların Ortalaması : ",ortalama)
 
-sonuc = np.random.randint(20)               # Rastgele sayı üretir. 0 <= sonuc < 20
+# 0-1 arasında 5 adet sayı üret. 1 dahil değil.
+np_liste = np.random.rand(5)
 
-sonuc = np.random.randint(1,10,3)           # [7 4 4] <- Rastgele üretildi. 
+# 0-1 arasında 5 adet sayı üret. Negatif değerlerde dahil. 1 dahil değil.
+np_liste = np.random.randn(5)
 
-sonuc = np.random.rand(2)                   # [0.87102353 0.26386273] 0 ve 1 arası rastgele 2 sayı
+# 5x10 matris oluşturma.
+np_liste = np.arange(50).reshape(5,10)
+satirDegerToplam = np_liste.sum(axis=1) # satırları toplar.
+sutunDegerToplam = np_liste.sum(axis=0) # sutunları toplar.
+print("Satır Toplam : ",satirDegerToplam)
+print("Sütun Toplam : ",sutunDegerToplam)
 
-np_array = np.arange(50)                    # [0 1 2 3 4 5 ... 47 48 49]
 
-np_multi = np_array.reshape(5,10)           # 5x10 matris
 
-print(np_multi.sum(axis=1))                 # np_multi matrisinin her satırının toplamı. [ 45 145 245 345 445]
-rnd_sayilar = np.random.randint(1,100,10) 
-enBuyuk = rnd_sayilar.max()                 # Üretilen en büyük sayı.
-enKucuk = rnd_sayilar.min()                 # Üretilen en küçük sayı.
-ortalama = rnd_sayilar.mean()               # Üretilen sayıların ortalamaları.
-buyukSayiIndex = rnd_sayilar.argmax()       # Üretilen en büyük sayının indeksi.
-kucukSayiIndex = rnd_sayilar.argmin()       # Üretilen en küçük sayının indeksi.
+print(np_liste)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

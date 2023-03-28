@@ -1,18 +1,23 @@
+# NumPy, Sayısal Python’un kısaltmasıdır. Her tür bilimsel hesaplamayı yapmanıza yardımcı olan bir Python kitaplığıdır.
+
 import numpy as np
 
 # python list
-py_liste = [1,2,3,4,5,6,7,8,9]
+liste = [1,2,3,4,5,6,7,8,9,10]
 
 # numpy array
+np_dizi = np.array([10,20,30,40,50,60,70,80,90,100])
+print(np_dizi)
 
-np_array = np.array([1,2,3,4,5,6,7,8,9])
+# python matris
+py_matris = [[1,2,3],[4,5,6],[7,8,9]]
 
-print(f"py_list -> {py_liste} {type(py_liste)}") # list
-print(f"np_array -> {np_array} {type(np_array)}") # ndarray
+# numpy matris
+np_dizi = np.array([45,89,78,45,44,12,1,38,36,55,31,74])
+np_matris = np_dizi.reshape(4,3) # 3x3 matris.
+print(np_matris)
 
-py_multi = [[1,2,3],[4,5,6],[7,8,9]]
-np_multi = np_array.reshape(3,3)
- 
-print(f"py_multi -> {py_multi} {type(py_multi)}") # list
-print(f"np_multi -> {np_multi} {type(np_multi)}") # ndarray
+print(np_dizi.ndim) # ndim 1 boyutlu olduğunu yazar.
+print(np_matris.ndim) # ndim 2 boyutlu olduğunu yazar.
 
+print(np_matris.shape) # shape (3,3) olduğunu gösterir.
