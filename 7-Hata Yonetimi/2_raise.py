@@ -20,5 +20,4 @@ try:
 except Exception as ex:
     print(ex)
 else : print("Geçerli Praola.")
-
-    
+print = 1000
