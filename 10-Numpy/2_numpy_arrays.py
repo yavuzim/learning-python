@@ -41,37 +41,3 @@ satirDegerToplam = np_liste.sum(axis=1) # satırları toplar.
 sutunDegerToplam = np_liste.sum(axis=0) # sutunları toplar.
 print("Satır Toplam : ",satirDegerToplam)
 print("Sütun Toplam : ",sutunDegerToplam)
-
-
-
-print(np_liste)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
