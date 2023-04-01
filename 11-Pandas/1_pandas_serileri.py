@@ -42,22 +42,21 @@ sonuc = pandas_serileri[:2]
 sonuc = pandas_serileri[[0,1,2]]
 print(sonuc)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# dizinin boyutuna bakma.
+dizi = [3,4,5,6]
+pnd = pd.Series(dizi)
+sonuc = pnd.ndim # 1 boyutlu
+sonuc = pnd.shape # (4,) 
+# tipe bakma.
+sonuc = pnd.dtype # int64
+# verilerde işlem yapma.
+sonuc = pnd.sum()
+sonuc = pnd.max()
+sonuc = pnd.min()
+dizi1 = [10,20,30,40]
+pnd = pd.Series(dizi1)
+sonuc = pnd+pnd
+sonuc = pnd+50
+sonuc = np.sqrt(pnd)
+sonuc = pnd>18
+sonuc = pnd % 2 == 0
