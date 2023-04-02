@@ -35,5 +35,3 @@ df = pd.DataFrame(veriler)
 df = pd.DataFrame(veriler,columns = ["Dersler","Harf","Notlar"])
 df = pd.DataFrame(veriler,columns = ["Dersler","Harf","Notlar"],index=[101,201,102,404])
 df = pd.DataFrame(veriler,columns = ["Dersler","Harf","Notlar"],index=[101,201,102,404],dtype = float)
-
-
