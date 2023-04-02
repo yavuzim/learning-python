@@ -1,0 +1,22 @@
+[
+    {
+        "ad": "Kemal Yavuz",
+        "soyad": "İMER",
+        "alinan_dersler": ["Otomata","Ayrık Matematik","Veri Yapıları","Lineer Cebir"]
+    },
+    {    
+        "ad": "Mehmetcan",
+        "soyad": "MUT",
+        "alinan_dersler": ["Otomata","Benzetim Modelleme","Oyun Programlama","Veri Madenciliği"]
+    },
+    {    
+        "ad": "Mehmet Abdülkadir",
+        "soyad": "AKDENİZ",
+        "alinan_dersler": ["Otomata","Benzetim Modelleme","Ağ Programlama","Veri Yapıları"]
+    },
+    {    
+        "ad": "Alican",
+        "soyad": "DARI",
+        "alinan_dersler": ["Otomata","Veri Yapıları","Mikroişlemciler","Pogramlama Dilleri"]
+    }
+]
