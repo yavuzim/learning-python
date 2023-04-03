@@ -61,18 +61,3 @@ sonuc = df.groupby("Departman").agg(np.mean)
 sonuc = df.groupby("Departman")["Maaş"].agg([np.sum,np.max,np.min,np.mean])
 # Muhasebeye göre Maaş da toplam,min,max ve ortalama hesabı yapar.
 sonuc = df.groupby("Departman")["Maaş"].agg([np.sum,np.max,np.min,np.mean]).loc["Muhasebe"]
-print(sonuc)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
