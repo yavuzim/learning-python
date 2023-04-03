@@ -3,6 +3,7 @@ from numpy.random import randn
 
 df = pd.DataFrame(randn(3,3),index=["A","B","C"],columns=["Sutun1","Sutun2","Sutun3"])
 print(df)
+print("###############################")
 
 sonuc = df["Sutun1"] # Sutun1 kolonunu getirir.
 
@@ -11,6 +12,7 @@ sonuc = type(df["Sutun1"]) # Sutun1 kolonunun tipini getirir.
 sonuc = df[["Sutun1","Sutun2"]] # Birden fazla kolon getirme.
 
 sonuc = df.loc["A"] # A satırı.
+
 sonuc = df.iloc[0] # A satırına denk gelir.
 
 sonuc = df.loc["A","Sutun1"] # A satırı Sutun1 kolonu.
