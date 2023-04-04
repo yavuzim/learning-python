@@ -67,30 +67,3 @@ df = pd.DataFrame(veri)
 
 # Tekrarlayan alanları düzenleme.
 df = df.pivot_table(index="Ay",columns = "Kategori",values="Gelir")
-
-print(df)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
