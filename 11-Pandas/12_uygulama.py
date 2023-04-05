@@ -45,22 +45,3 @@ sonuc = df["Team"].value_counts()
 # İsmi içinde "and" geçen kayıtlar.
 df = df.dropna() # NaN olan satırlar silindi.
 sonuc = df[df["Name"].str.contains("and")]
-
-print(sonuc)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
