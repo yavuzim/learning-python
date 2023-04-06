@@ -3,7 +3,7 @@ import pandas as pd
 df = pd.read_csv("nba.csv")
 print(df)
 print(df.columns)
-print("#####################################################################")
+
 # İlk 10 kaydı getiriniz.
 sonuc = df.head(10)
 
