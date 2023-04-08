@@ -26,7 +26,7 @@ plt.show()
 
 x = np.linspace(0,2,100)
 
-plt.plot(x,x,label="Düzgün",color="red")
+plt.plot(x,x,label="Doğrusal",color="red")
 plt.plot(x,x**2,label="Karesel",color="yellow")
 plt.plot(x,x**3,label="Kübik")
 
@@ -36,4 +36,37 @@ plt.ylabel("y ekseni")
 plt.title("Grafik Başlığı")
 
 plt.legend()
+plt.show()
+
+######################################################################
+
+x = np.linspace(0,2,100)
+
+fig,axs = plt.subplots(3)
+
+axs[0].plot(x,x,color="red")
+axs[0].set_title("Doğrusal")
+
+axs[1].plot(x,x**2,color="blue")
+axs[1].set_title("Karesel")
+
+axs[2].plot(x,x**3,color="yellow")
+axs[2].set_title("Kübik")
+
+plt.tight_layout()
+
+plt.show()
+
+######################################################################
+
+x = np.linspace(0,2,100)
+
+fig,axs = plt.subplots(2,2)
+fig.suptitle("Grafik Ana Başlığı")
+
+axs[0,0].plot(x,x,color="red")
+axs[0,1].plot(x,x**2,color="red")
+axs[1,0].plot(x,x**3,color="red")
+axs[1,1].plot(x,x**4,color="red")
+
 plt.show()
